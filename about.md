@@ -8,7 +8,7 @@ technology,simple is awesome!
 
 ### More Information
 
-NullPointerException.
+他强任他强
 
 ### Contact me
 
