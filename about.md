@@ -4,6 +4,11 @@ title: About
 permalink: /about/
 ---
 
+technology,simple is awesome!
+
+### More Information
+
+NullPointerException.
 
 ### Contact me
 
