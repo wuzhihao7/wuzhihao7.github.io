@@ -1,9 +1,7 @@
 ---
 layout: page
-title: 第一篇博客
+title: rocksdb java初探
 ---
-# 介绍
-
 rocksdb是facebook开源的一个嵌入式kv存储引擎，key 和 value 是任意字节流。使用c++语音编写，基于Google的LevelDB，但提高了扩展性可以运行在多核处理器上，可以有效使用快速存储，支持IO绑定、内存和一次写负荷。
 
 它具有以下四个特点：
@@ -13,15 +11,11 @@ rocksdb是facebook开源的一个嵌入式kv存储引擎，key 和 value 是任�
 - 可适配性：RocksDB适合于多种不同工作量类型。从像MyRocks这样的数据存储引擎，到应用数据缓存,甚至是一些嵌入式工作量，RocksDB都可以从容面对这些不同的数据工作量需求。
 - 础和高级的数据库操作，RocksDB提供了一些基础的操作，例如打开和关闭数据库。对于合并和压缩过滤等高级操作，也提供了读写支持。
 
-# 使用
-
-## 依赖
+## 使用
 
 ```gradle
 implementation 'org.rocksdb:rocksdbjni:6.3.6'
 ```
-
-## 示例
 
 RocksDB底层实现了AutoCloseable接口，因此可以使用try-with-resources打开资源。
 
